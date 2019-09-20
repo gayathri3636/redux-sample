@@ -1,22 +1,33 @@
-.App {
+*{
   text-align: center;
+  max-height: 100%; 
 }
 
-.App-logo {
-  height: 40vmin;
+.login{
+  padding: 20px;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 150px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.user{
+  max-height: 500px;
+  max-width: 100%;
+  padding: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #09d3ac;
+.password{
+  max-height: 800px;
+  max-width: 100%;
+  padding: 5px;
+  margin: 2px;
+  font-size: 20px;
+}
+
+.button{
+  border-radius: 10px;
+  margin : 5px;
+  font-size: 20px;
 }
