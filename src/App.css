@@ -1,31 +1,25 @@
-#parent{
-  display: table;
-  width: 100%;
+.App {
+  text-align: center;
 }
 
-#form-inside-input {
-   left: 50%;
-   top: 50%;
-   position: absolute;
-   -webkit-transform: translate3d(-50%, -50%, 0);
-   /*-moz-transform: translate3d(-50%, -50%, 0);*/
-   transform: translate3d(-50%, -50%, 0);
-}
-body{
-  height: 100%;
+body, html {   
   width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
-  display: flex;
+  display:table;
+}
+body {
+  display:table-cell;
+  vertical-align:middle;
 }
 
-Form{
-  margin : auto;
+
+#form-login {
+  display:table;
+  margin:auto;
 }
 
-.button {
-  display: inline-block;
-  width: 85px;
-  margin: 20px 40px;
-  border: 5px solid black;
+.button{
+  margin: 10px;
 }

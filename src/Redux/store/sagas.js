@@ -1,6 +1,6 @@
 import { takeEvery, call, put, select, take, fork, all, takeLatest } from 'redux-saga/effects';
 import * as Types from '../actions/types';
-import { GetDataFromServer, deleteTodoAPI } from '../services/index';
+import { GetDataFromServer, deleteTodoAPI } from '../services';
 
 const baseUrl = 'https://sleepy-basin-37644.herokuapp.com';
 //const baseUrl2 = 'https://fierce-crag-76882.herokuapp.com';
