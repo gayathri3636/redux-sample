@@ -32,7 +32,7 @@ class App extends React.Component {
       return {[name]: value}
     })
   }
-
+//Error validations
   isValid = () =>{
     const { username, password } = this.state;
     if(username.length === 0 || password.length === 0){
@@ -77,6 +77,7 @@ class App extends React.Component {
               </Tooltip>
             }
           />
+          <br />
         <Input name="password" 
         onChange={this.onTextChange} 
         value={this.state.password} 
