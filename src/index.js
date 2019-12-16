@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './index.css';
 import App from './App';
-import Home from './Home';
+import Home from './routes/Home';
 import Users from './routes/users';
 import Contact from './routes/contact';
 import { Provider } from "react-redux";
 import store from './Redux/store';
+import PrivateRoute from './routes/router';
 import {
     BrowserRouter as Router,
     Link,
@@ -18,27 +19,15 @@ import {
 const Routing = (
     <Router> 
         <div>
-            <ul>
-                <li>
-                    <Link to = "/Home">Home</Link>
-                </li>
-                <li>
-                    <Link to = "/Users">Users</Link>
-                </li>
-                <li>
-                    <Link to = "/Contact">Contact</Link>
-                </li>
-            </ul>
-            <Route exact path="/" component={Home} />
-            <Route path="/Users" component={Users} />
-            <Route path="/Contact" component={Contact} />
+            <switch>
+                <Route exact path="/" component={Home} />
+                <privateRoute path="/Users" component={Users} />
+                <Route path="/Contact" component={Contact} />
+            </switch>
         </div>
     </Router>
 )
 
-ReactDOM.render(<Provider store={store}>
-        <App />
-        <Home />
-        <Users />
-        <Contact />
-    </Provider>, document.getElementById('root'));
+ReactDOM.render(<Provider store = {store}>
+    <Routing />
+</Provider>, document.getElementById('root'));

@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import App from './App';
-import Users from './routes/users';
-import Contact from './routes/contact';
+import Users from './users';
+import Contact from './contact';
 
 const Home = () => (
     <div>
