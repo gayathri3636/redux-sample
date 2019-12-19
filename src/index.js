@@ -35,9 +35,9 @@ const Routing = (
         <Router>
             <div>
                 <Switch>
-                    <Route exact path="/" component={Home} />
+                    <Route exact path="/Home" component={Home} />
                     <Route path="/Users" component={Users} />
-                    <Route exact path="/Login" component={Login} />
+                    <Route exact path="/" component={Login} />
                     <Route exact path = "/Register" component = {Register} />
                     <Route path="/Contact" component={Contact} />
                 </Switch>
