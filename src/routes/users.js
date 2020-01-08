@@ -31,12 +31,15 @@ this.props.callParentMethod(this.props.data.id) }
 
   
     render() {  
-      <UsersList data={element} onClick={this.props.onClick} callParentMethod={this.calledFromChild} />
+      
         return( 
+          <div>
+          <UsersList  onClick={this.props.onClick} callParentMethod={this.calledFromChild} />
             <li 
                 onClick={this.handleClick}>
                 {this.props.data.content}
             </li>
+          </div>
         )
     } 
 }
